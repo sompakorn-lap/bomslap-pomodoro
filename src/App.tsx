@@ -3,11 +3,24 @@ import Home from "./Home.page";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home/>} />
-      </Routes>
-    </BrowserRouter>
+    <div className="grid grid-rows-[auto_1fr_auto] min-h-screen p-2">
+
+      <header>
+        <h1>BomSLap - Pomodoro timer</h1>
+      </header>
+
+      <main>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home/>} />
+          </Routes>
+        </BrowserRouter>
+      </main>
+
+      <footer>
+        footer
+      </footer>
+    </div>
   );
 }
 
