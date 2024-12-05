@@ -21,7 +21,7 @@ const timers = [
 function Home() {
   return (
     <section>
-      <Timer {...timers[0]} />
+      <Timer />
     </section>
   )
 }
