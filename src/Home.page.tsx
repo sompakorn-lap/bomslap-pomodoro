@@ -4,7 +4,7 @@ const timers = [
   {
     title: "FOCUS",
     interval: 12,
-    color: "#7C00FE"
+    color: "#7c00fe"
   }
 ];
 
