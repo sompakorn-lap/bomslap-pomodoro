@@ -3,13 +3,13 @@ import Home from "./Home.page";
 
 function App() {
   return (
-    <div className="grid grid-rows-[auto_1fr_auto] min-h-screen p-2">
+    <div className="grid grid-rows-[auto_1fr_auto] min-h-screen">
 
       <header>
         <h1>BomSLap - Pomodoro timer</h1>
       </header>
 
-      <main>
+      <main className="p-2">
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home/>} />

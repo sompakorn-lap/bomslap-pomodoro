@@ -1,7 +1,17 @@
+import Timer from "./components/Timer";
+
+const timers = [
+  {
+    title: "FOCUS",
+    interval: 12,
+    color: "#7C00FE"
+  }
+];
+
 function Home() {
   return (
     <section>
-      <h1 className="text-xl text-teal-400">Home</h1>
+      <Timer {...timers[0]} />
     </section>
   )
 }
