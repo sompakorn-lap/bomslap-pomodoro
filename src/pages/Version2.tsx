@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useState } from "react";
 import useCountDown from "../hooks/useCountDown";
 import formatRemainingTime from "../utils/formatRemainingTime";
 
@@ -71,7 +71,7 @@ function Version2() {
       </section>
 
       <section className="gap-2 mb-4 p-2 border-2 rounded">
-        {timers.map(({ mode, backgroundColor, initRemainingTime, key }, index) => 
+        {timers.map(({ mode, backgroundColor, initRemainingTime, key }) => 
           <div
             className="flex place-items-center gap-1 mb-2" 
             key={`input-${key}`}
