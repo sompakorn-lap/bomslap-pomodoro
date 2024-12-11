@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Home.page";
+import Version1 from "./pages/Version1";
 
 function App() {
   return (
@@ -12,12 +12,13 @@ function App() {
       <main className="px-2 py-4">
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home/>} />
+            <Route path="/" element={<Version1/>} />
+            <Route path="/v1" element={<Version1/>} />
           </Routes>
         </BrowserRouter>
       </main>
 
-      <footer className="w-full p-4 flex place-content-center bg-[#264653] text-gray-100">
+      <footer className="w-full p-4 bg-[#264653] text-gray-100">
         <a 
           className="flex gap-1 text-lg"
           href="https://github.com/sompakorn-lap/bomslap-pomodoro"

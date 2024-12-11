@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
+import COUNTDOWN_TIMERS from "../constants/countDownTimers";
 import useCountDown from "../hooks/useCountDown";
 import formatRemainingTime from "../utils/formatRemainingTime";
-import COUNTDOWN_TIMERS from "../constants/countDownTimers";
 
-function Timer() {
+function Version1() {
 
   const [start, setStart] = useState(false);
   const [order, setOrder] = useState(0);
@@ -21,7 +21,8 @@ function Timer() {
   }, [remainingTime]);
 
   return (
-    <div className="w-4/5 max-w-2xl p-4 mx-auto rounded border-2">
+    <section>
+      <div className="w-4/5 max-w-2xl p-4 mx-auto rounded border-2">
       <div
         className="w-full text-center text-white mb-4 p-2 rounded text-2xl"
         style={{ backgroundColor: color}}
@@ -44,7 +45,8 @@ function Timer() {
         START
       </button>
     </div>
+    </section>
   );
 }
 
-export default Timer;
+export default Version1;
