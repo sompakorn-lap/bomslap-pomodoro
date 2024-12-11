@@ -13,7 +13,7 @@ function useCountDown(initRemainingTime: number, start: boolean) {
       return ;
 
     const interval = setInterval(() => {
-      setRemainingTime(prevRemainingTime => prevRemainingTime - 1);
+      setRemainingTime(prevRemainingTime => prevRemainingTime > 0 ? prevRemainingTime - 1 : 0);
     }, 1000);
 
     return () => clearInterval(interval);
